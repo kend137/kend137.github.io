@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who Is Kendrick?</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="#projects-section">PROJECTS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <a href="index.html"><img src="images/logo.png"></a>
+
+        <div class="text-box">
+            <h1>Hi, I'm Kendrick!</h1>
+            <p>I create games and programs <br> with a plethora of languages.</p>
+            <a href="#projects-section" class="hero-btn">Click Here To See What I've Done</a>
+        </div>
+
+    </section>
+<!-- About Me -->
+<section class="projects">
+    <h1 id="projects-section">Kendrick Daniels Projects</h1>
+    <p>I work in Lua the most as a Roblox game developer but also work in languages like Java, Javascript, Python, HTML, CSS, SQL, and more! <br> Below are just some of my favorite projects I've worked on.</p>
+
+    <div class="row">
+        <div class="projects-col">
+             <a href="https://www.roblox.com/games/2978450615/HALLOWEEN-Mad-Paintball-Reloaded" target="_blank"><img src="images/project1.jpg"></a>
+            <h3>Mad Paintball: Reloaded</h3>
+            <p>Mad Paintball: Reloaded was created in 2019 by me with the intention of practicing server handled bullet registration instead of client side handling for precise gunplay.</p>
+        </div>
+        <div class="projects-col">
+            <h3>Python Game</h3>
+            <p>Put that one python game u made here.</p>
+        </div>
+        <div class="projects-col">
+            <h3>Another Project</h3>
+            <p>I'd recommend we make something with Java.</p>
+        </div>
+    </div>
+
+</section>
+
+<!-- Contact Kendrick -->
+<section class="contact">
+    <h1>Get in contact with <br> Kendrick Daniels</h1>
+    <a href="contact.html" class="hero-btn">CONTACT ME</a>
+</section>
+
+<!-- Footer -->
+<section class="footer">
+    <h4>Find More of Me</h4>
+    <p>Below are social media pages connected to me.</p>
+    <div class="icons">
+        <a href="https://www.linkedin.com/in/kendrick-daniels-6b610a328" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/kend137" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+    <p>Website created with HTML and CSS by Kendrick Daniels</p>
+</section>
+
+<!--Javascript for menu-->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function openMenu(){
+        if (navLinks.style.right == "-200px"){
+            navLinks.style.right = "0";
+        }else{
+            navLinks.style.right = "-200px";
+        }        
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>

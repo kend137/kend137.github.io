@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="index.html#projects-section">PROJECTS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="openMenu()"></i>
+        </nav>
+
+        <h1>About Me</h1>
+</section>
+<!--About Me Content-->
+<section class="about-me">
+    <div class="row">
+        <div class="about-col">
+            <h1>Creation Is My Passion</h1>
+            <p>Growing up I always knew I wanted to create something everyone could utilize and enjoy. From a very young age I was introduced to a game where 
+                I could create anything I wanted with code. From that point on my love for coding only grew.
+                I graduated Rowan University with a degree in computer science honing in on my skills as a programmer and led a small group of developers on Roblox throughout my years at college
+                which would not have been possible without my footing in Boy Scouts as an Eagle Scout and esports captain for my Universities Valorant Team.
+                I hope I get the chance to tell you more about myself so please do not be afraid to contact me!
+            </p>
+            <a href="contact.html" class="hero-btn blue-btn">CONTACT ME</a>
+        </div>
+        <div class="about-col">
+            <img src="images/about.jpg"
+        </div>
+    </div>
+    
+</section>
+
+<!-- Footer -->
+<section class="footer">
+    <h4>Find More of Me</h4>
+    <p>Below are social media pages connected to me.</p>
+    <div class="icons">
+        <a href="https://www.linkedin.com/in/kendrick-daniels-6b610a328" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/kend137" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+    <p>Website created with HTML and CSS by Kendrick Daniels</p>
+</section>
+
+<!--Javascript for menu-->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function openMenu(){
+        if (navLinks.style.right == "-200px"){
+            navLinks.style.right = "0";
+        }else{
+            navLinks.style.right = "-200px";
+        }        
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>
