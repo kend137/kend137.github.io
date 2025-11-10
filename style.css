@@ -159,6 +159,10 @@ p{
 .projects-col img{
     border-radius: 20%;
 }
+h2{
+    font-size: 28px;
+    font-weight: 600;
+}
 h3{
     text-align: center;
     font-weight: 600;
@@ -249,6 +253,18 @@ h3{
 .about-col p{
     padding: 15px 0 25px;
 }
+.about-col ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 10px;
+    position: relative;
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding-left: 0px;
+    
+}
 .blue-btn{
     border: 1px solid #006c9e;
     background: transparent;
@@ -266,9 +282,6 @@ h3{
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
-
-
-
-
-
-
+.contact-col ::placeholder {
+    color: #333;
+}
